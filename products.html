@@ -10,9 +10,30 @@
   <link href="css/products.css" rel="stylesheet">
 </head>
 <body>
-  <header class="bg-primary text-white py-3">
+  <div class="inicio">
+  <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="profile-sidebar">
+        <nav id="miCuenta">
+            <div class="profile-container">
+                <a href="my-profile.html" >
+                    <img src="img/perfilbase.jpg" alt="Imagen de perfil" class="profile-image">
+                    <div class="profile-overlay">
+                        <div class="profile-text">Mi Perfil</div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+  <header>
     <div class="container">
-      <h1 class="mb-0">eMercado</h1>
+      <h1 class="mb-0"><strong>eMercado</strong></h1>
       <p class="mb-0">Los mejores autos al mejor precio</p>
     </div>
   </header>
@@ -21,10 +42,10 @@
     <div class="container">
       <div class="row mb-4">
         <div class="col-md-6">
-          <h2 id="category-title">Autos</h2>
+          <h2 id="category-title" style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;;" >Autos</h2>
         </div>
         <div class="col-md-6 text-md-end">
-          <select class="form-select" id="sort-dropdown" style="max-width: 200px; display: inline-block;">
+          <select class="form-select" id="sort-dropdown">
             <option value="relevantes">Más relevantes</option>
             <option value="precio-asc">Precio: menor a mayor</option>
             <option value="precio-desc">Precio: mayor a menor</option>

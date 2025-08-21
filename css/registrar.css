@@ -166,3 +166,30 @@ hr {
     
     animation: fadeIn 0.5s ease-out;
 }
+
+/* === Navbar verde con clase propia === */
+.site-header {
+    background-color: #008f39 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.site-header .navbar-brand,
+.site-header .nav-link,
+.site-header .navbar-text {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.site-header .btn {
+    background: #ffffff !important;
+    color: #008f39 !important;
+    border: 1px solid #ffffff !important;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.site-header .btn:hover {
+    background: #0a6c2e !important;
+    color: #ffffff !important;
+    border-color: #0a6c2e !important;
+}

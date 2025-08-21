@@ -12,13 +12,19 @@
 </head>
 
 <body>
-  <div class="inicio">
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-      </ul>
-    </nav>
-  </div>
+  
+  <!-- Barra de navegación con opción de cerrar sesión -->
+  <nav class="navbar navbar-expand-lg site-header">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">eMercado</a>
+      <div class="navbar-nav ms-auto">
+        <span class="nav-item nav-link text-white">
+          Bienvenido, <span id="userEmail"></span>
+        </span>
+        <button class="nav-item btn btn-outline-light ms-2" onclick="logout()">Cerrar sesión</button>
+      </div>
+    </div>
+  </nav>
 
   <div class="profile-sidebar">
     <nav id="miCuenta">

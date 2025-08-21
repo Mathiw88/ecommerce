@@ -1,9 +1,27 @@
-/* Estilos generales */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(45deg, #white, #white);
   min-height: 200vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
 }
+
+/* Imagen de fondo con blur */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/Imagen-de-WhatsApp-2025-08-21-a-las-19.58.59_43184cb5.webp") no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(6px) brightness(0.7); /* difumina y oscurece */
+  z-index: -2;
+}
+
+
+
 
 .container {
   margin-top: 0%;
@@ -309,4 +327,78 @@ main {
 .btn-detalles:active {
   transform: translateY(0);
   box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+}
+
+
+/* === Navbar verde con clase propia === */
+.site-header {
+    background-color: #008f39 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.site-header .navbar-brand,
+.site-header .nav-link,
+.site-header .navbar-text {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.site-header .btn {
+    background: #ffffff !important;
+    color: #008f39 !important;
+    border: 1px solid #ffffff !important;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.site-header .btn:hover {
+    background: #0a6c2e !important;
+    color: #ffffff !important;
+    border-color: #0a6c2e !important;
+}
+
+/* Le cambio el fondo y el color al footer */
+footer.bg-light {
+  background: #008f39 !important;
+  color: #cbd5e1 !important;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+
+/* Centro el contenido del contenedor */
+footer.bg-light .container {
+  text-align: center;
+}
+
+
+/* Ajusto márgenes y tamaño de letra de los párrafos */
+footer.bg-light p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+
+/* Estilo el link de Jóvenes a Programar */
+footer.bg-light a {
+  color: #000000 !important;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+
+/* Hago que al pasar el mouse cambie de color y subrayado */
+footer.bg-light a:hover {
+  color: #86efac !important;
+  border-color: #86efac;
+}w
+
+
+/* Neutralizo lo que tenía en .mb-0 solo dentro del footer */
+footer .mb-0 {
+  display: inline;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
 }

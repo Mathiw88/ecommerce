@@ -41,7 +41,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: #e79333;
+    background: #008f39;
 }
 
 /* Campos del formulario */
@@ -80,7 +80,7 @@ body {
 
 /* Botón de login */
 .btn-primary {
-    background-color: #3498db;
+    background-color:#008f39;
     border: none;
     padding: 12px;
     font-size: 16px;
@@ -92,7 +92,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #ca8824;
+    background-color: #008f39;
     transform: translateY(-2px);
 }
 
@@ -102,10 +102,11 @@ body {
 
 /* Enlaces */
 a {
-    color: #b69c0c;
+    color: #008f39;
     text-decoration: none;
     transition: all 0.3s;
 }
+
 
 a:hover {
     color: #06080a;

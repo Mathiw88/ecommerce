@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(45deg, #003000a4, #043011);
+  background: linear-gradient(45deg, #white, #white);
   min-height: 200vh;
 }
 

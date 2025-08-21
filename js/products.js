@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Datos del JSON proporcionado
   const categoryData = {
     "catID": 101,
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Función para renderizar los productos
   function renderizarProductos(products) {
     productosContainer.innerHTML = '';
-    
+
     products.forEach(producto => {
       const productoHTML = `
         <div class="col-md-4 col-sm-6 mb-4">
@@ -84,12 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
               <p class="producto-vendidos">
                 <i class="bi bi-people-fill"></i> ${producto.soldCount} vendidos
               </p>
-              <button class="btn btn-primary w-100">Ver detalles</button>
+             <button class="btn btn-primary w-100 btn-detalles">
+                   <i class="bi bi-box-arrow-up-right"></i> Ver detalles
+              </button>
             </div>
           </div>
         </div>
       `;
-      
+
       productosContainer.innerHTML += productoHTML;
     });
   }
@@ -97,8 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Función para ordenar productos
   function ordenarProductos(criterio) {
     const productos = [...categoryData.products];
-    
-    switch(criterio) {
+
+    switch (criterio) {
       case 'relevantes':
         return productos.sort((a, b) => b.soldCount - a.soldCount);
       case 'precio-asc':
@@ -113,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Manejar el cambio en el dropdown de ordenamiento
-  document.getElementById('sort-dropdown').addEventListener('change', function(e) {
+  document.getElementById('sort-dropdown').addEventListener('change', function (e) {
     const productosOrdenados = ordenarProductos(e.target.value);
     renderizarProductos(productosOrdenados);
   });

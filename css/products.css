@@ -510,11 +510,3 @@
     color: #ffffff !important;
     border-color: #0a6c2e !important;
 }
-.btn-primary {
-  background-color: #008f39;
-  border-color: #006d2e;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-}
